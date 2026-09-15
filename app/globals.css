@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7eeee;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Container fluid scaling helper */
+@media (max-width: 1024px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+}
+
+/* Strictly enforce ONLY ONE scrollbar on the page */
+*::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+  display: none !important;
+}
+
+html::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
