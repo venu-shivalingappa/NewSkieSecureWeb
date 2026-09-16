@@ -1,32 +1,88 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+const MAX_FULL_NAME_LENGTH = 200;
+const MAX_EMAIL_LENGTH = 320;
+const MAX_OPTIONAL_FIELD_LENGTH = 200;
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const CONTROL_CHARACTER_PATTERN = /[\u0000-\u001F\u007F]/;
+
+function escapeHtml(value: string): string {
+  return value.replace(/[&<>"']/g, (character) => {
+    const entities: Record<string, string> = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+    };
+
+    return entities[character];
+  });
+}
+
+function readOptionalString(value: unknown, maxLength: number): string | null {
+  if (value === undefined) return '';
+  if (typeof value !== 'string') return null;
+
+  const normalized = value.trim();
+  return normalized.length <= maxLength ? normalized : null;
+}
+
 export async function POST(request: Request) {
+  let data: unknown;
+
   try {
-    const data = await request.json();
-    const { fullName, email, company, endpoints, interest } = data;
+    data = await request.json();
+  } catch {
+    return NextResponse.json({ success: false, message: 'Invalid submission.' }, { status: 400 });
+  }
+
+  try {
+    if (!data || typeof data !== 'object' || Array.isArray(data)) {
+      return NextResponse.json({ success: false, message: 'Invalid submission.' }, { status: 400 });
+    }
+
+    const payload = data as Record<string, unknown>;
+    const fullName = readOptionalString(payload.fullName, MAX_FULL_NAME_LENGTH);
+    const email = readOptionalString(payload.email, MAX_EMAIL_LENGTH);
+    const company = readOptionalString(payload.company, MAX_OPTIONAL_FIELD_LENGTH);
+    const endpoints = readOptionalString(payload.endpoints, MAX_OPTIONAL_FIELD_LENGTH);
+    const interest = readOptionalString(payload.interest, MAX_OPTIONAL_FIELD_LENGTH);
+
+    if (
+      fullName === null ||
+      email === null ||
+      company === null ||
+      endpoints === null ||
+      interest === null ||
+      !fullName ||
+      !email ||
+      !EMAIL_PATTERN.test(email) ||
+      CONTROL_CHARACTER_PATTERN.test(fullName) ||
+      CONTROL_CHARACTER_PATTERN.test(email) ||
+      CONTROL_CHARACTER_PATTERN.test(company) ||
+      CONTROL_CHARACTER_PATTERN.test(endpoints) ||
+      CONTROL_CHARACTER_PATTERN.test(interest)
+    ) {
+      return NextResponse.json({ success: false, message: 'Invalid submission.' }, { status: 400 });
+    }
 
     const recipient = 'techsolveenginellp@gmail.com';
-
-    console.log('====================================================');
-    console.log(`[LEAD RECEIVED FOR ${recipient}]`);
-    console.log(`Name:        ${fullName}`);
-    console.log(`Email:       ${email}`);
-    console.log(`Company:     ${company || 'Not provided'}`);
-    console.log(`Endpoints:   ${endpoints || 'Not selected'}`);
-    console.log(`Interest:    ${interest || 'General'}`);
-    console.log('====================================================');
 
     const gmailUser = process.env.GMAIL_USER || 'techsolveenginellp@gmail.com';
     const gmailPass = process.env.GMAIL_APP_PASSWORD;
 
     if (!gmailPass) {
-      console.warn('⚠️ GMAIL_APP_PASSWORD is not set in .env.local yet.');
-      return NextResponse.json({
-        success: true,
-        warning: 'GMAIL_APP_PASSWORD not set in .env.local, lead logged to server console.',
-      });
+      console.error('Contact form submission unavailable: SMTP configuration is incomplete.');
+      return NextResponse.json({ success: false, message: 'Unable to process submission.' }, { status: 500 });
     }
+
+    const htmlFullName = escapeHtml(fullName);
+    const htmlEmail = escapeHtml(email);
+    const htmlCompany = escapeHtml(company);
+    const htmlEndpoints = escapeHtml(endpoints);
+    const htmlInterest = escapeHtml(interest);
 
     // Configure Nodemailer Gmail SMTP transporter
     const transporter = nodemailer.createTransport({
@@ -75,25 +131,25 @@ export async function POST(request: Request) {
             <table style="width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.6;">
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; width: 140px; font-weight: 500;">Full Name</td>
-                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #0F172A; font-weight: 600;">${fullName}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #0F172A; font-weight: 600;">${htmlFullName}</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; font-weight: 500;">Work Email</td>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #EE343F; font-weight: 600;">
-                  <a href="mailto:${email}" style="color: #EE343F; text-decoration: none;">${email}</a>
+                  <a href="mailto:${htmlEmail}" style="color: #EE343F; text-decoration: none;">${htmlEmail}</a>
                 </td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; font-weight: 500;">Company</td>
-                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #0F172A; font-weight: 500;">${company || 'Not provided'}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #0F172A; font-weight: 500;">${htmlCompany || 'Not provided'}</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; font-weight: 500;">Environment</td>
-                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #0F172A; font-weight: 500;">${endpoints || 'Not selected'}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #0F172A; font-weight: 500;">${htmlEndpoints || 'Not selected'}</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; font-weight: 500;">Plan Interest</td>
-                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #EE343F; font-weight: 600;">${interest || 'General'}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #EE343F; font-weight: 600;">${htmlInterest || 'General'}</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; color: #64748B; font-weight: 500;">Received At</td>
@@ -104,8 +160,8 @@ export async function POST(request: Request) {
 
           <!-- Quick Action Button -->
           <div style="text-align: center; margin-bottom: 24px;">
-            <a href="mailto:${email}?subject=Welcome%20to%20SkieSecure%20Early%20Access" style="display: inline-block; background-color: #EE343F; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none; padding: 10px 24px; border-radius: 6px;">
-              Reply to ${fullName}
+            <a href="mailto:${htmlEmail}?subject=Welcome%20to%20SkieSecure%20Early%20Access" style="display: inline-block; background-color: #EE343F; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none; padding: 10px 24px; border-radius: 6px;">
+              Reply to ${htmlFullName}
             </a>
           </div>
 
