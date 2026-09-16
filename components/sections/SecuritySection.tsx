@@ -301,7 +301,7 @@ export default function SecuritySection({ id }: { id?: string }) {
                   cx="270"
                   cy="270"
                   r="192"
-                  stroke="#F9B8BE"
+                  stroke="#F7B1B7"
                   strokeWidth="1.2"
                   strokeOpacity="0.85"
                 />
@@ -311,7 +311,7 @@ export default function SecuritySection({ id }: { id?: string }) {
                   cx="270"
                   cy="20"
                   r="6"
-                  fill="#1A44F5"
+                  fill="#EE343F"
                 />
 
                 {/* Dot 2: Right (~3:15 on outer circle) */}
@@ -327,14 +327,14 @@ export default function SecuritySection({ id }: { id?: string }) {
                   cx="46"
                   cy="324"
                   r="6"
-                  fill="#1A44F5"
+                  fill="#EE343F"
                 />
               </g>
 
               {/* Top Arch of Shield (Closer to text without touching or overlapping) */}
               <path
                 d="M 148 232 L 148 136 L 270 82 L 392 136 L 392 232"
-                stroke="#1A44F5"
+                stroke="#EE343F"
                 strokeWidth="9"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -343,7 +343,7 @@ export default function SecuritySection({ id }: { id?: string }) {
               {/* Bottom Bowl of Shield (Starts below 'Rocket Science' with clean breathing room) */}
               <path
                 d="M 162 348 C 176 414 270 454 270 454 C 270 454 364 414 378 348"
-                stroke="#1A44F5"
+                stroke="#EE343F"
                 strokeWidth="9"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -405,7 +405,7 @@ export default function SecuritySection({ id }: { id?: string }) {
             >
               {/* Left Icon (Red Outline) */}
               <div className="w-12 sm:w-16 flex items-center justify-center shrink-0">
-                {currentSlide.problem.icon('#F00D0D')}
+                {currentSlide.problem.icon('#B61E2B')}
               </div>
 
               {/* Right Text Area: Animated sequentially */}
@@ -416,26 +416,26 @@ export default function SecuritySection({ id }: { id?: string }) {
                 <div className="flex flex-col items-start relative">
                   {/* Line 1 with Strike 1 */}
                   <div className="relative inline-block max-w-full">
-                    <h3 className="text-[#F00D0D] text-xl sm:text-2xl lg:text-[34px] xl:text-[40px] font-medium leading-snug sm:leading-tight tracking-tight m-0">
+                    <h3 className="text-[#B61E2B] text-xl sm:text-2xl lg:text-[34px] xl:text-[40px] font-medium leading-snug sm:leading-tight tracking-tight m-0">
                       {currentSlide.problem.line1}
                     </h3>
 
                     {/* Strikethrough Line 1 */}
                     <div
-                      className="anim-strike-line-1 absolute left-0 top-[52%] h-[3px] sm:h-[3.5px] bg-[#F00D0D] rounded-sm pointer-events-none"
+                      className="anim-strike-line-1 absolute left-0 top-[52%] h-[3px] sm:h-[3.5px] bg-[#B61E2B] rounded-sm pointer-events-none"
                     />
                   </div>
 
                   {/* Line 2 with Strike 2 */}
                   {currentSlide.problem.line2 && (
                     <div className="relative inline-block mt-1 sm:mt-1.5 max-w-full">
-                      <h3 className="text-[#F00D0D] text-xl sm:text-2xl lg:text-[34px] xl:text-[40px] font-medium leading-snug sm:leading-tight tracking-tight m-0">
+                      <h3 className="text-[#B61E2B] text-xl sm:text-2xl lg:text-[34px] xl:text-[40px] font-medium leading-snug sm:leading-tight tracking-tight m-0">
                         {currentSlide.problem.line2}
                       </h3>
 
                       {/* Strikethrough Line 2 */}
                       <div
-                        className="anim-strike-line-2 absolute left-0 top-[52%] h-[3px] sm:h-[3.5px] bg-[#F00D0D] rounded-sm pointer-events-none"
+                        className="anim-strike-line-2 absolute left-0 top-[52%] h-[3px] sm:h-[3.5px] bg-[#B61E2B] rounded-sm pointer-events-none"
                       />
                     </div>
                   )}
@@ -449,7 +449,7 @@ export default function SecuritySection({ id }: { id?: string }) {
             >
               {/* Left Icon (Blue Outline) */}
               <div className="w-12 sm:w-16 flex items-center justify-center shrink-0">
-                {currentSlide.solution.icon('#1A44F5')}
+                {currentSlide.solution.icon('#EE343F')}
               </div>
 
               {/* Right Text Area: Animated after red strikethrough */}
@@ -457,7 +457,7 @@ export default function SecuritySection({ id }: { id?: string }) {
                 key={`solution-${activeSlide}`}
                 className="anim-blue-text flex-1"
               >
-                <h3 className="text-[#1A44F5] text-xl sm:text-2xl lg:text-[32px] xl:text-[38px] font-medium leading-snug sm:leading-tight tracking-tight m-0">
+                <h3 className="text-[#EE343F] text-xl sm:text-2xl lg:text-[32px] xl:text-[38px] font-medium leading-snug sm:leading-tight tracking-tight m-0">
                   <div>{currentSlide.solution.line1}</div>
                   {currentSlide.solution.line2 && <div>{currentSlide.solution.line2}</div>}
                   {currentSlide.solution.line3 && <div>{currentSlide.solution.line3}</div>}
@@ -481,7 +481,7 @@ export default function SecuritySection({ id }: { id?: string }) {
                     width: isActive ? '14px' : '10px',
                     height: isActive ? '14px' : '10px',
                     borderRadius: '50%',
-                    backgroundColor: isActive ? '#1A44F5' : '#6B7280',
+                    backgroundColor: isActive ? '#EE343F' : '#6B7280',
                     border: 'none',
                     cursor: 'pointer',
                     padding: 0,

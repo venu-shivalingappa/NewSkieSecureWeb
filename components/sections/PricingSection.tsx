@@ -53,9 +53,9 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
         <div className="mb-8 sm:mb-12 flex flex-col items-start">
           {/* Pill Badge: PRICING */}
           <div
-            className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#E5EEFF] border border-[#DBEAFE] mb-4"
+            className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#FEE6E8] border border-[#F7C7CE] mb-4"
           >
-            <span className="text-xs font-bold tracking-wider text-[#1A44F5] uppercase leading-none">
+            <span className="text-xs font-bold tracking-wider text-[#EE343F] uppercase leading-none">
               PRICING
             </span>
           </div>
@@ -63,7 +63,7 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
           {/* Heading: One Plan. Everything Included. Starting at $10/endpoint. */}
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-tight lg:leading-[1.15] tracking-tight m-0">
             <span className="text-slate-900 block">One Plan. Everything Included.</span>
-            <span className="text-[#1A44F5] block mt-1.5 sm:mt-2">Starting at $10/endpoint.</span>
+            <span className="text-[#EE343F] block mt-1.5 sm:mt-2">Starting at $10/endpoint.</span>
           </h2>
         </div>
 
@@ -181,8 +181,8 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                     boxSizing: 'border-box',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#1A44F5';
-                    e.currentTarget.style.color = '#1A44F5';
+                    e.currentTarget.style.borderColor = '#EE343F';
+                    e.currentTarget.style.color = '#EE343F';
                     e.currentTarget.style.backgroundColor = '#F8FAFC';
                   }}
                   onMouseLeave={(e) => {
@@ -202,7 +202,7 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                 style={{
                   backgroundColor: '#FFFFFF',
                   borderRadius: '16px',
-                  border: '2px solid #1A44F5',
+                  border: '2px solid #EE343F',
                   padding: '24px 24px 32px 24px',
                   display: 'flex',
                   flexDirection: 'column',
@@ -230,7 +230,7 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                       alignItems: 'center',
                       padding: '4px 12px',
                       borderRadius: '8px',
-                      backgroundColor: '#E5EEFF',
+                      backgroundColor: '#FEE6E8',
                       marginBottom: '12px',
                     }}
                   >
@@ -238,7 +238,7 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                       style={{
                         fontSize: '12px',
                         fontWeight: 600,
-                        color: '#1A44F5',
+                        color: '#EE343F',
                         lineHeight: 1,
                       }}
                     >
@@ -252,7 +252,7 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                       fontSize: '12px',
                       fontWeight: 700,
                       letterSpacing: '0.08em',
-                      color: '#1A44F5',
+                      color: '#EE343F',
                       textTransform: 'uppercase',
                       marginBottom: '14px',
                     }}
@@ -306,7 +306,7 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                     width: '100%',
                     padding: '12px 20px',
                     borderRadius: '9999px',
-                    backgroundColor: '#1A44F5',
+                    backgroundColor: '#EE343F',
                     border: 'none',
                     color: '#FFFFFF',
                     fontSize: '14px',
@@ -316,18 +316,18 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '8px',
-                    boxShadow: '0 4px 14px rgba(26, 68, 245, 0.3)',
+                    boxShadow: '0 4px 14px rgba(238, 52, 63, 0.3)',
                     transition: 'all 0.2s ease',
                     marginTop: '28px',
                     boxSizing: 'border-box',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#1538cc';
-                    e.currentTarget.style.boxShadow = '0 6px 18px rgba(26, 68, 245, 0.4)';
+                    e.currentTarget.style.backgroundColor = '#D52A35';
+                    e.currentTarget.style.boxShadow = '0 6px 18px rgba(238, 52, 63, 0.4)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = '#1A44F5';
-                    e.currentTarget.style.boxShadow = '0 4px 14px rgba(26, 68, 245, 0.3)';
+                    e.currentTarget.style.backgroundColor = '#EE343F';
+                    e.currentTarget.style.boxShadow = '0 4px 14px rgba(238, 52, 63, 0.3)';
                   }}
                 >
                   <span>Join the Waitlist</span>
@@ -423,8 +423,8 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                     boxSizing: 'border-box',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#1A44F5';
-                    e.currentTarget.style.color = '#1A44F5';
+                    e.currentTarget.style.borderColor = '#EE343F';
+                    e.currentTarget.style.color = '#EE343F';
                     e.currentTarget.style.backgroundColor = '#F8FAFC';
                   }}
                   onMouseLeave={(e) => {
@@ -500,14 +500,14 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
                       width: '20px',
                       height: '20px',
                       borderRadius: '50%',
-                      border: '1.8px solid #1A44F5',
+                      border: '1.8px solid #EE343F',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       flexShrink: 0,
                     }}
                   >
-                    <Check size={12} color="#1A44F5" strokeWidth={2.8} />
+                    <Check size={12} color="#EE343F" strokeWidth={2.8} />
                   </div>
 
                   {/* Feature Text */}

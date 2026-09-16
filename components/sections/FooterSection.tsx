@@ -74,13 +74,13 @@ export default function FooterSection({ id, onOpenModal }: FooterSectionProps) {
               placeholder="you@company.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full sm:w-[320px] h-12 rounded-full px-5 text-sm sm:text-[15px] text-white bg-slate-800/80 border border-slate-700/80 outline-none focus:border-[#1A44F5] transition-colors"
+              className="w-full sm:w-[320px] h-12 rounded-full px-5 text-sm sm:text-[15px] text-white bg-slate-800/80 border border-slate-700/80 outline-none focus:border-[#EE343F] transition-colors"
             />
 
             {/* Button Pill: Get Early Access */}
             <button
               type="submit"
-              className="w-full sm:w-auto h-12 px-7 rounded-full bg-[#1A44F5] hover:bg-[#1538cc] text-white text-sm sm:text-[15px] font-semibold transition-colors shrink-0 shadow-md cursor-pointer"
+              className="w-full sm:w-auto h-12 px-7 rounded-full bg-[#EE343F] hover:bg-[#D52A35] text-white text-sm sm:text-[15px] font-semibold transition-colors shrink-0 shadow-md cursor-pointer"
             >
               Get Early Access
             </button>
@@ -108,7 +108,7 @@ export default function FooterSection({ id, onOpenModal }: FooterSectionProps) {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-2.5 cursor-pointer select-none"
           >
-            <div className="w-8 h-8 rounded-lg bg-[#1A44F5] flex items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(26,68,245,0.35)]">
+            <div className="w-8 h-8 rounded-lg bg-[#EE343F] flex items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(238,52,63,0.35)]">
               <svg
                 width="16"
                 height="16"
@@ -124,7 +124,7 @@ export default function FooterSection({ id, onOpenModal }: FooterSectionProps) {
             </div>
             <span className="text-lg font-bold tracking-tight leading-none inline-flex items-center">
               <span className="text-white">Skie</span>
-              <span className="text-[#1A44F5]">Secure</span>
+              <span className="text-[#EE343F]">Secure</span>
             </span>
           </div>
 

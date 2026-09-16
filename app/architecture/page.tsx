@@ -186,14 +186,14 @@ export default function ArchitecturePage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Laptop size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Laptop size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -232,14 +232,14 @@ export default function ArchitecturePage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Server size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Server size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -278,14 +278,14 @@ export default function ArchitecturePage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Cloud size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Cloud size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -322,14 +322,14 @@ export default function ArchitecturePage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Activity size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Activity size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -368,14 +368,14 @@ export default function ArchitecturePage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Terminal size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Terminal size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -415,8 +415,8 @@ export default function ArchitecturePage() {
                   width: '48px',
                   height: '48px',
                   borderRadius: '50%',
-                  backgroundColor: '#E5EEFF',
-                  border: '1.5px solid #1A44F5',
+                  backgroundColor: '#FEE6E8',
+                  border: '1.5px solid #EE343F',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -424,7 +424,7 @@ export default function ArchitecturePage() {
                   marginBottom: '14px',
                 }}
               >
-                <ShieldCheck size={24} color="#1A44F5" strokeWidth={2.2} />
+                <ShieldCheck size={24} color="#EE343F" strokeWidth={2.2} />
               </div>
 
               {/* TLS Label */}
@@ -433,7 +433,7 @@ export default function ArchitecturePage() {
                   fontSize: '11px',
                   fontWeight: 800,
                   letterSpacing: '0.6px',
-                  color: '#1A44F5',
+                  color: '#EE343F',
                   textAlign: 'center',
                   lineHeight: 1.3,
                   textTransform: 'uppercase',
@@ -450,14 +450,14 @@ export default function ArchitecturePage() {
                   <path
                     className="anim-flow-line"
                     d="M 4 10 H 128"
-                    stroke="#1A44F5"
+                    stroke="#EE343F"
                     strokeWidth="2.5"
                     strokeDasharray="6 4"
                     strokeLinecap="round"
                   />
                   <path
                     d="M 124 5 L 132 10 L 124 15"
-                    stroke="#1A44F5"
+                    stroke="#EE343F"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -494,7 +494,7 @@ export default function ArchitecturePage() {
                     fontSize: '12px',
                     fontWeight: 700,
                     letterSpacing: '0.8px',
-                    color: '#1A44F5',
+                    color: '#EE343F',
                     textTransform: 'uppercase',
                   }}
                 >
@@ -553,13 +553,13 @@ export default function ArchitecturePage() {
                           fontSize: '11px',
                           fontWeight: 800,
                           letterSpacing: '0.8px',
-                          color: '#1A44F5',
+                          color: '#EE343F',
                           textTransform: 'uppercase',
                         }}
                       >
                         STAGE 1
                       </span>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div
                       style={{
@@ -580,10 +580,10 @@ export default function ArchitecturePage() {
                   {/* Flow Arrow 1 -> 2 */}
                   <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0' }}>
                     <svg width="14" height="32" viewBox="0 0 14 32" fill="none">
-                      <path d="M 7 2 V 26" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M 7 2 V 26" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" />
                       <path
                         d="M 3.5 22.5 L 7 26.5 L 10.5 22.5"
-                        stroke="#1A44F5"
+                        stroke="#EE343F"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -613,13 +613,13 @@ export default function ArchitecturePage() {
                           fontSize: '11px',
                           fontWeight: 800,
                           letterSpacing: '0.8px',
-                          color: '#1A44F5',
+                          color: '#EE343F',
                           textTransform: 'uppercase',
                         }}
                       >
                         STAGE 2
                       </span>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div
                       style={{
@@ -640,10 +640,10 @@ export default function ArchitecturePage() {
                   {/* Flow Arrow 2 -> 3 */}
                   <div style={{ display: 'flex', justifyContent: 'center', padding: '6px 0' }}>
                     <svg width="14" height="32" viewBox="0 0 14 32" fill="none">
-                      <path d="M 7 2 V 26" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M 7 2 V 26" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" />
                       <path
                         d="M 3.5 22.5 L 7 26.5 L 10.5 22.5"
-                        stroke="#1A44F5"
+                        stroke="#EE343F"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -673,13 +673,13 @@ export default function ArchitecturePage() {
                           fontSize: '11px',
                           fontWeight: 800,
                           letterSpacing: '0.8px',
-                          color: '#1A44F5',
+                          color: '#EE343F',
                           textTransform: 'uppercase',
                         }}
                       >
                         STAGE 3
                       </span>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div
                       style={{
@@ -733,7 +733,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <FileText size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <FileText size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -758,7 +758,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <ExternalLink size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <ExternalLink size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -783,7 +783,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Zap size={18} color="#1A44F5" strokeWidth={2.2} fill="#1A44F5" fillOpacity={0.15} />
+                      <Zap size={18} color="#EE343F" strokeWidth={2.2} fill="#EE343F" fillOpacity={0.15} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -808,7 +808,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Users size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Users size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -833,7 +833,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -858,7 +858,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Bell size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Bell size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -883,7 +883,7 @@ export default function ArchitecturePage() {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Shield size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Shield size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -914,12 +914,12 @@ export default function ArchitecturePage() {
             flexWrap: 'wrap',
           }}
         >
-          {/* Card 1: Lightweight Agent (Light Blue #E5EEFF) */}
+          {/* Card 1: Lightweight Agent (Light Blue #FEE6E8) */}
           <div
             style={{
               flex: '1 1 500px',
               maxWidth: '570px',
-              backgroundColor: '#E5EEFF',
+              backgroundColor: '#FEE6E8',
               borderRadius: '24px',
               padding: '36px 36px 28px 36px',
               boxSizing: 'border-box',

@@ -145,14 +145,14 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Laptop size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Laptop size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -191,14 +191,14 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Server size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Server size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -237,14 +237,14 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Cloud size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Cloud size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -281,14 +281,14 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Activity size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Activity size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -327,14 +327,14 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: '#E5EEFF',
+                        backgroundColor: '#FEE6E8',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         flexShrink: 0,
                       }}
                     >
-                      <Terminal size={20} color="#1A44F5" strokeWidth={2.2} />
+                      <Terminal size={20} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '15px', fontWeight: 700, color: '#1E293B', lineHeight: 1.2 }}>
@@ -366,8 +366,8 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                   width: '44px',
                   height: '44px',
                   borderRadius: '50%',
-                  backgroundColor: '#E5EEFF',
-                  border: '1.5px solid #1A44F5',
+                  backgroundColor: '#FEE6E8',
+                  border: '1.5px solid #EE343F',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -375,7 +375,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                   marginBottom: '10px',
                 }}
               >
-                <ShieldCheck size={22} color="#1A44F5" strokeWidth={2.2} />
+                <ShieldCheck size={22} color="#EE343F" strokeWidth={2.2} />
               </div>
 
               {/* TLS Label */}
@@ -384,7 +384,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                   fontSize: '10px',
                   fontWeight: 800,
                   letterSpacing: '0.5px',
-                  color: '#1A44F5',
+                  color: '#EE343F',
                   textAlign: 'center',
                   lineHeight: 1.3,
                   textTransform: 'uppercase',
@@ -401,14 +401,14 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                   <path
                     className="anim-flow-line"
                     d="M 4 10 H 88"
-                    stroke="#1A44F5"
+                    stroke="#EE343F"
                     strokeWidth="2.5"
                     strokeDasharray="6 4"
                     strokeLinecap="round"
                   />
                   <path
                     d="M 84 5 L 92 10 L 84 15"
-                    stroke="#1A44F5"
+                    stroke="#EE343F"
                     strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -442,7 +442,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     fontSize: '11px',
                     fontWeight: 700,
                     letterSpacing: '0.8px',
-                    color: '#1A44F5',
+                    color: '#EE343F',
                     textTransform: 'uppercase',
                   }}
                 >
@@ -484,13 +484,13 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                           fontSize: '11px',
                           fontWeight: 800,
                           letterSpacing: '0.8px',
-                          color: '#1A44F5',
+                          color: '#EE343F',
                           textTransform: 'uppercase',
                         }}
                       >
                         STAGE 1
                       </span>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div
                       style={{
@@ -511,10 +511,10 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                   {/* Flow Arrow 1 -> 2 */}
                   <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
                     <svg width="14" height="28" viewBox="0 0 14 28" fill="none">
-                      <path d="M 7 2 V 22" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M 7 2 V 22" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" />
                       <path
                         d="M 3.5 18.5 L 7 22.5 L 10.5 18.5"
-                        stroke="#1A44F5"
+                        stroke="#EE343F"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -537,13 +537,13 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                           fontSize: '11px',
                           fontWeight: 800,
                           letterSpacing: '0.8px',
-                          color: '#1A44F5',
+                          color: '#EE343F',
                           textTransform: 'uppercase',
                         }}
                       >
                         STAGE 2
                       </span>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div
                       style={{
@@ -564,10 +564,10 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                   {/* Flow Arrow 2 -> 3 */}
                   <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0' }}>
                     <svg width="14" height="28" viewBox="0 0 14 28" fill="none">
-                      <path d="M 7 2 V 22" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" />
+                      <path d="M 7 2 V 22" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" />
                       <path
                         d="M 3.5 18.5 L 7 22.5 L 10.5 18.5"
-                        stroke="#1A44F5"
+                        stroke="#EE343F"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -590,13 +590,13 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                           fontSize: '11px',
                           fontWeight: 800,
                           letterSpacing: '0.8px',
-                          color: '#1A44F5',
+                          color: '#EE343F',
                           textTransform: 'uppercase',
                         }}
                       >
                         STAGE 3
                       </span>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div
                       style={{
@@ -645,7 +645,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <FileText size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <FileText size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -670,7 +670,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <ExternalLink size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <ExternalLink size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -695,7 +695,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Zap size={18} color="#1A44F5" strokeWidth={2.2} fill="#1A44F5" fillOpacity={0.15} />
+                      <Zap size={18} color="#EE343F" strokeWidth={2.2} fill="#EE343F" fillOpacity={0.15} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -720,7 +720,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Users size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Users size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -745,7 +745,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Cpu size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Cpu size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -770,7 +770,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Bell size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Bell size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -795,7 +795,7 @@ export default function ArchitectureSection({ id }: { id?: string }) {
                     }}
                   >
                     <div style={{ marginTop: '2px', flexShrink: 0 }}>
-                      <Shield size={18} color="#1A44F5" strokeWidth={2.2} />
+                      <Shield size={18} color="#EE343F" strokeWidth={2.2} />
                     </div>
                     <div>
                       <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E293B', lineHeight: 1.25 }}>
@@ -819,9 +819,9 @@ export default function ArchitectureSection({ id }: { id?: string }) {
         <div
           className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch justify-between"
         >
-          {/* Card 1: Lightweight Agent (Light Blue #E5EEFF) */}
+          {/* Card 1: Lightweight Agent (Light Blue #FEE6E8) */}
           <div
-            className="w-full bg-[#E5EEFF] rounded-[24px] p-7 sm:p-9 flex flex-col justify-between shadow-[0_8px_24px_rgba(26,68,245,0.04)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(26,68,245,0.08)] box-border"
+            className="w-full bg-[#FEE6E8] rounded-[24px] p-7 sm:p-9 flex flex-col justify-between shadow-[0_8px_24px_rgba(26,68,245,0.04)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(26,68,245,0.08)] box-border"
           >
             <div>
               <h3

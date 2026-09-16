@@ -46,16 +46,16 @@ export async function POST(request: Request) {
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px 24px; border: 1px solid #E2E8F0; border-radius: 12px; background-color: #FFFFFF; color: #1E293B;">
           
           <!-- Header Bar -->
-          <div style="border-bottom: 2px solid #1A44F5; padding-bottom: 20px; margin-bottom: 28px;">
+          <div style="border-bottom: 2px solid #EE343F; padding-bottom: 20px; margin-bottom: 28px;">
             <table style="width: 100%; border-collapse: collapse;">
               <tr>
                 <td style="vertical-align: middle;">
                   <span style="font-size: 20px; font-weight: 800; letter-spacing: -0.5px; color: #0F172A;">
-                    Skie<span style="color: #1A44F5;">Secure</span>
+                    Skie<span style="color: #EE343F;">Secure</span>
                   </span>
                 </td>
                 <td style="text-align: right; vertical-align: middle;">
-                  <span style="display: inline-block; background-color: #E5EEFF; border: 1px solid #DBEAFE; color: #1A44F5; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 9999px;">
+                  <span style="display: inline-block; background-color: #FEE6E8; border: 1px solid #F7C7CE; color: #EE343F; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 9999px;">
                     Early Access Lead
                   </span>
                 </td>
@@ -79,8 +79,8 @@ export async function POST(request: Request) {
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; font-weight: 500;">Work Email</td>
-                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #1A44F5; font-weight: 600;">
-                  <a href="mailto:${email}" style="color: #1A44F5; text-decoration: none;">${email}</a>
+                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #EE343F; font-weight: 600;">
+                  <a href="mailto:${email}" style="color: #EE343F; text-decoration: none;">${email}</a>
                 </td>
               </tr>
               <tr>
@@ -93,7 +93,7 @@ export async function POST(request: Request) {
               </tr>
               <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #64748B; font-weight: 500;">Plan Interest</td>
-                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #1A44F5; font-weight: 600;">${interest || 'General'}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #E2E8F0; color: #EE343F; font-weight: 600;">${interest || 'General'}</td>
               </tr>
               <tr>
                 <td style="padding: 10px 0; color: #64748B; font-weight: 500;">Received At</td>
@@ -104,7 +104,7 @@ export async function POST(request: Request) {
 
           <!-- Quick Action Button -->
           <div style="text-align: center; margin-bottom: 24px;">
-            <a href="mailto:${email}?subject=Welcome%20to%20SkieSecure%20Early%20Access" style="display: inline-block; background-color: #1A44F5; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none; padding: 10px 24px; border-radius: 6px;">
+            <a href="mailto:${email}?subject=Welcome%20to%20SkieSecure%20Early%20Access" style="display: inline-block; background-color: #EE343F; color: #FFFFFF; font-size: 14px; font-weight: 600; text-decoration: none; padding: 10px 24px; border-radius: 6px;">
               Reply to ${fullName}
             </a>
           </div>

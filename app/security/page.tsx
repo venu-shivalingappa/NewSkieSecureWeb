@@ -338,7 +338,7 @@ export default function SecurityPage() {
                   cx="270"
                   cy="270"
                   r="185"
-                  stroke="#F9B8BE"
+                  stroke="#F7B1B7"
                   strokeWidth="1.4"
                   strokeOpacity="0.85"
                 />
@@ -348,7 +348,7 @@ export default function SecurityPage() {
                   cx="270"
                   cy="85"
                   r="6.5"
-                  fill="#1A44F5"
+                  fill="#EE343F"
                 />
 
                 {/* Dot 2: Right (3 o'clock on outer circle) */}
@@ -364,14 +364,14 @@ export default function SecurityPage() {
                   cx="78"
                   cy="405"
                   r="6.5"
-                  fill="#1A44F5"
+                  fill="#EE343F"
                 />
               </g>
 
               {/* Top Arch of Shield (Stops above text) */}
               <path
                 d="M 152 268 L 152 160 L 270 105 L 388 160 L 388 268"
-                stroke="#1A44F5"
+                stroke="#EE343F"
                 strokeWidth="10.5"
                 strokeLinecap="butt"
                 strokeLinejoin="round"
@@ -380,7 +380,7 @@ export default function SecurityPage() {
               {/* Bottom Bowl of Shield (Cups under text) */}
               <path
                 d="M 165 352 C 178 418 270 458 270 458 C 270 458 362 418 375 352"
-                stroke="#1A44F5"
+                stroke="#EE343F"
                 strokeWidth="10.5"
                 strokeLinecap="butt"
                 strokeLinejoin="round"
@@ -415,7 +415,7 @@ export default function SecurityPage() {
               >
                 <span
                   style={{
-                    color: '#F00D0D',
+                    color: '#B61E2B',
                     fontSize: '12px',
                     fontWeight: 700,
                     letterSpacing: '0.8px',
@@ -441,7 +441,7 @@ export default function SecurityPage() {
               >
                 Security Shouldn’t Be
                 <br />
-                <span style={{ color: '#F00D0D' }}>Rocket Science</span>
+                <span style={{ color: '#B61E2B' }}>Rocket Science</span>
               </h2>
             </div>
           </div>
@@ -547,7 +547,7 @@ export default function SecurityPage() {
                   flexShrink: 0,
                 }}
               >
-                {currentSlide.problem.icon('#F00D0D')}
+                {currentSlide.problem.icon('#B61E2B')}
               </div>
 
               {/* Right Text Area: Animated sequentially */}
@@ -577,7 +577,7 @@ export default function SecurityPage() {
                   >
                     <h3
                       style={{
-                        color: '#F00D0D',
+                        color: '#B61E2B',
                         fontSize: 'clamp(28px, 2.7vw, 42px)',
                         fontWeight: 500,
                         lineHeight: 1.25,
@@ -597,7 +597,7 @@ export default function SecurityPage() {
                         left: 0,
                         top: '52%',
                         height: '3.5px',
-                        backgroundColor: '#F00D0D',
+                        backgroundColor: '#B61E2B',
                         borderRadius: '2px',
                         pointerEvents: 'none',
                       }}
@@ -615,7 +615,7 @@ export default function SecurityPage() {
                     >
                       <h3
                         style={{
-                          color: '#F00D0D',
+                          color: '#B61E2B',
                           fontSize: 'clamp(28px, 2.7vw, 42px)',
                           fontWeight: 500,
                           lineHeight: 1.25,
@@ -635,7 +635,7 @@ export default function SecurityPage() {
                           left: 0,
                           top: '52%',
                           height: '3.5px',
-                          backgroundColor: '#F00D0D',
+                          backgroundColor: '#B61E2B',
                           borderRadius: '2px',
                           pointerEvents: 'none',
                         }}
@@ -646,10 +646,10 @@ export default function SecurityPage() {
               </div>
             </div>
 
-            {/* BOTTOM CARD: SOLUTION CARD (BLUE #E5EEFF) */}
+            {/* BOTTOM CARD: SOLUTION CARD (BLUE #FEE6E8) */}
             <div
               style={{
-                backgroundColor: '#E5EEFF',
+                backgroundColor: '#FEE6E8',
                 borderRadius: '30px',
                 padding: '40px 48px',
                 display: 'flex',
@@ -671,7 +671,7 @@ export default function SecurityPage() {
                   flexShrink: 0,
                 }}
               >
-                {currentSlide.solution.icon('#1A44F5')}
+                {currentSlide.solution.icon('#EE343F')}
               </div>
 
               {/* Right Text Area: Animated after red strikethrough */}
@@ -684,7 +684,7 @@ export default function SecurityPage() {
               >
                 <h3
                   style={{
-                    color: '#1A44F5',
+                    color: '#EE343F',
                     fontSize: 'clamp(28px, 2.7vw, 42px)',
                     fontWeight: 500,
                     lineHeight: 1.26,
@@ -723,7 +723,7 @@ export default function SecurityPage() {
                     width: isActive ? '14px' : '10px',
                     height: isActive ? '14px' : '10px',
                     borderRadius: '50%',
-                    backgroundColor: isActive ? '#1A44F5' : '#6B7280',
+                    backgroundColor: isActive ? '#EE343F' : '#6B7280',
                     border: 'none',
                     cursor: 'pointer',
                     padding: 0,

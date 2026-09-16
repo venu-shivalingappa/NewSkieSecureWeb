@@ -75,10 +75,10 @@ export default function FAQSection({ id }: { id?: string }) {
         {/* BADGE: FAQ'S                                                              */}
         {/* ========================================================================= */}
         <div
-          className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#E5EEFF] border border-[#DBEAFE] mb-4"
+          className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#FEE6E8] border border-[#F7C7CE] mb-4"
         >
           <span
-            className="text-xs font-bold tracking-wider text-[#1A44F5] uppercase leading-none"
+            className="text-xs font-bold tracking-wider text-[#EE343F] uppercase leading-none"
           >
             FAQ&apos;S
           </span>
@@ -143,7 +143,7 @@ export default function FAQSection({ id }: { id?: string }) {
                   }}
                   onMouseEnter={(e) => {
                     const qEl = e.currentTarget.querySelector('.faq-q') as HTMLElement;
-                    if (qEl) qEl.style.color = '#1A44F5';
+                    if (qEl) qEl.style.color = '#EE343F';
                   }}
                   onMouseLeave={(e) => {
                     const qEl = e.currentTarget.querySelector('.faq-q') as HTMLElement;
@@ -155,7 +155,7 @@ export default function FAQSection({ id }: { id?: string }) {
                     style={{
                       fontSize: '17px',
                       fontWeight: 600,
-                      color: isOpen ? '#1A44F5' : '#1E293B',
+                      color: isOpen ? '#EE343F' : '#1E293B',
                       letterSpacing: '-0.015em',
                       lineHeight: 1.4,
                       transition: 'color 0.2s ease',
@@ -170,7 +170,7 @@ export default function FAQSection({ id }: { id?: string }) {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: '#1A44F5',
+                      color: '#EE343F',
                       marginLeft: '16px',
                       flexShrink: 0,
                       transition: 'transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)',

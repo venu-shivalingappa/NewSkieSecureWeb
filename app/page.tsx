@@ -82,7 +82,7 @@ export default function LandingPage() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex items-center gap-2.5 sm:gap-3 cursor-pointer select-none"
           >
-            <div className="w-8 h-8 sm:w-[38px] sm:h-[38px] rounded-[10px] bg-[#1A44F5] flex items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(26,68,245,0.28)]">
+            <div className="w-8 h-8 sm:w-[38px] sm:h-[38px] rounded-[10px] bg-[#EE343F] flex items-center justify-center shrink-0 shadow-[0_2px_8px_rgba(238,52,63,0.28)]">
               <svg
                 className="w-4 h-4 sm:w-[19px] sm:h-[19px]"
                 viewBox="0 0 24 24"
@@ -97,7 +97,7 @@ export default function LandingPage() {
             </div>
             <span className="text-xl sm:text-[22px] font-bold tracking-tight leading-none inline-flex items-center">
               <span className="text-[#1E1E1E]">Skie</span>
-              <span className="text-[#1A44F5]">Secure</span>
+              <span className="text-[#EE343F]">Secure</span>
             </span>
           </div>
 
@@ -106,25 +106,25 @@ export default function LandingPage() {
             <nav className="flex items-center gap-8">
               <a
                 href="#platform"
-                className="text-slate-600 hover:text-[#1A44F5] text-[15px] font-medium transition-colors"
+                className="text-slate-600 hover:text-[#EE343F] text-[15px] font-medium transition-colors"
               >
                 Platform
               </a>
               <a
                 href="#features"
-                className="text-slate-600 hover:text-[#1A44F5] text-[15px] font-medium transition-colors"
+                className="text-slate-600 hover:text-[#EE343F] text-[15px] font-medium transition-colors"
               >
                 Features
               </a>
               <a
                 href="#pricing"
-                className="text-slate-600 hover:text-[#1A44F5] text-[15px] font-medium transition-colors"
+                className="text-slate-600 hover:text-[#EE343F] text-[15px] font-medium transition-colors"
               >
                 Pricing
               </a>
               <a
                 href="#faq"
-                className="text-slate-600 hover:text-[#1A44F5] text-[15px] font-medium transition-colors"
+                className="text-slate-600 hover:text-[#EE343F] text-[15px] font-medium transition-colors"
               >
                 FAQ
               </a>
@@ -133,7 +133,7 @@ export default function LandingPage() {
             <button
               type="button"
               onClick={() => openContactModal('Get Early Access — Priority Access', 'Growth ($8/mo)')}
-              className="py-2.5 px-5.5 rounded-full bg-[#1A44F5] hover:bg-[#1538cc] text-white text-sm font-semibold shadow-[0_2px_10px_rgba(26,68,245,0.3)] hover:shadow-[0_4px_14px_rgba(26,68,245,0.4)] whitespace-nowrap transition-all"
+              className="py-2.5 px-5.5 rounded-full bg-[#EE343F] hover:bg-[#D52A35] text-white text-sm font-semibold shadow-[0_2px_10px_rgba(238,52,63,0.3)] hover:shadow-[0_4px_14px_rgba(238,52,63,0.4)] whitespace-nowrap transition-all"
             >
               Get Early Access
             </button>
@@ -144,7 +144,7 @@ export default function LandingPage() {
             <button
               type="button"
               onClick={() => openContactModal('Get Early Access — Priority Access', 'Growth ($8/mo)')}
-              className="py-2 px-3.5 sm:px-4 rounded-full bg-[#1A44F5] hover:bg-[#1538cc] text-white text-xs sm:text-sm font-semibold whitespace-nowrap shadow-sm transition-colors"
+              className="py-2 px-3.5 sm:px-4 rounded-full bg-[#EE343F] hover:bg-[#D52A35] text-white text-xs sm:text-sm font-semibold whitespace-nowrap shadow-sm transition-colors"
             >
               Get Early Access
             </button>
@@ -166,28 +166,28 @@ export default function LandingPage() {
               <a
                 href="#platform"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-700 hover:text-[#1A44F5] text-base font-semibold py-1.5 transition-colors"
+                className="text-slate-700 hover:text-[#EE343F] text-base font-semibold py-1.5 transition-colors"
               >
                 Platform
               </a>
               <a
                 href="#features"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-700 hover:text-[#1A44F5] text-base font-semibold py-1.5 transition-colors"
+                className="text-slate-700 hover:text-[#EE343F] text-base font-semibold py-1.5 transition-colors"
               >
                 Features
               </a>
               <a
                 href="#pricing"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-700 hover:text-[#1A44F5] text-base font-semibold py-1.5 transition-colors"
+                className="text-slate-700 hover:text-[#EE343F] text-base font-semibold py-1.5 transition-colors"
               >
                 Pricing
               </a>
               <a
                 href="#faq"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-700 hover:text-[#1A44F5] text-base font-semibold py-1.5 transition-colors"
+                className="text-slate-700 hover:text-[#EE343F] text-base font-semibold py-1.5 transition-colors"
               >
                 FAQ
               </a>
@@ -247,7 +247,7 @@ export default function LandingPage() {
           {/* Heading 1: Enterprise Security, / Built for SMBs */}
           <h1 className="text-4xl sm:text-5xl lg:text-[60px] font-extrabold tracking-tight text-[#1E1E1E] m-0 p-0 leading-[1.1] sm:leading-tight lg:leading-[60px]">
             Enterprise Security,
-            <span className="block text-[#1A44F5] tracking-tight">
+            <span className="block text-[#EE343F] tracking-tight">
               Built for SMBs
             </span>
           </h1>
@@ -263,7 +263,7 @@ export default function LandingPage() {
             <button
               type="button"
               onClick={() => openContactModal('Join the Waitlist & Get Early Access', 'Growth ($8/mo)')}
-              className="w-full sm:w-[257px] h-12 bg-[#1A44F5] hover:bg-[#1538cc] text-white rounded-full font-semibold text-base flex items-center justify-center gap-2 cursor-pointer shadow-[0px_0px_40px_rgba(26,68,245,0.18),0px_0px_80px_rgba(26,68,245,0.05)] transition-all"
+              className="w-full sm:w-[257px] h-12 bg-[#EE343F] hover:bg-[#D52A35] text-white rounded-full font-semibold text-base flex items-center justify-center gap-2 cursor-pointer shadow-[0px_0px_40px_rgba(238,52,63,0.18),0px_0px_80px_rgba(238,52,63,0.06)] transition-all"
             >
               <span>Join the Waitlist</span>
               <ArrowRight style={{ width: '18px', height: '18px' }} strokeWidth={2.2} />
@@ -307,14 +307,14 @@ export default function LandingPage() {
               markerHeight="6"
               orient="auto"
             >
-              <path d="M 1 2 L 8 5 L 1 8 Z" fill="#1A44F5" />
+              <path d="M 1 2 L 8 5 L 1 8 Z" fill="#EE343F" />
             </marker>
           </defs>
 
           {/* Vector 4: AI-Native & Agentic */}
           <path
             d="M 607 570 C 545 565, 481 530, 481 489"
-            stroke="#1A44F5"
+            stroke="#EE343F"
             strokeWidth="1.5"
             strokeDasharray="4 4"
             strokeLinecap="round"
@@ -324,7 +324,7 @@ export default function LandingPage() {
           {/* Vector 5: Cloud-Native */}
           <path
             d="M 607 740 C 570 755, 519 720, 519 675"
-            stroke="#1A44F5"
+            stroke="#EE343F"
             strokeWidth="1.5"
             strokeDasharray="4 4"
             strokeLinecap="round"
@@ -334,7 +334,7 @@ export default function LandingPage() {
           {/* Vector 7: Open Source */}
           <path
             d="M 1313 570 C 1365 565, 1413 530, 1413 498"
-            stroke="#1A44F5"
+            stroke="#EE343F"
             strokeWidth="1.5"
             strokeDasharray="4 4"
             strokeLinecap="round"
@@ -344,7 +344,7 @@ export default function LandingPage() {
           {/* Vector 6: Built for SMBs */}
           <path
             d="M 1313 725 C 1375 735, 1436 675, 1436 625"
-            stroke="#1A44F5"
+            stroke="#EE343F"
             strokeWidth="1.5"
             strokeDasharray="4 4"
             strokeLinecap="round"
@@ -359,7 +359,7 @@ export default function LandingPage() {
         */}
         <div className="xl:hidden w-full max-w-[706px] grid grid-cols-2 gap-3 mt-8 z-30">
           <div className="bg-white py-2.5 px-3.5 rounded-xl shadow-md border border-slate-100 flex items-center justify-center gap-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
               <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04" />
               <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04" />
             </svg>
@@ -367,14 +367,14 @@ export default function LandingPage() {
           </div>
 
           <div className="bg-white py-2.5 px-3.5 rounded-xl shadow-md border border-slate-100 flex items-center justify-center gap-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
               <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
             </svg>
             <span className="text-xs font-medium text-slate-800 whitespace-nowrap">Cloud-Native</span>
           </div>
 
           <div className="bg-white py-2.5 px-3.5 rounded-xl shadow-md border border-slate-100 flex items-center justify-center gap-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
               <polyline points="16 18 22 12 16 6" />
               <polyline points="8 6 2 12 8 18" />
               <line x1="14" y1="4" x2="10" y2="20" />
@@ -383,7 +383,7 @@ export default function LandingPage() {
           </div>
 
           <div className="bg-white py-2.5 px-3.5 rounded-xl shadow-md border border-slate-100 flex items-center justify-center gap-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A44F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EE343F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
               <rect x="6" y="2" width="12" height="20" rx="2" />
               <line x1="10" y1="7" x2="14" y2="7" />
               <line x1="10" y1="12" x2="14" y2="12" />
@@ -424,7 +424,7 @@ export default function LandingPage() {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#1A44F5"
+              stroke="#EE343F"
               strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -476,7 +476,7 @@ export default function LandingPage() {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#1A44F5"
+              stroke="#EE343F"
               strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -527,7 +527,7 @@ export default function LandingPage() {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#1A44F5"
+              stroke="#EE343F"
               strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -580,7 +580,7 @@ export default function LandingPage() {
               height="20"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#1A44F5"
+              stroke="#EE343F"
               strokeWidth="1.8"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -676,7 +676,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 items-center text-center">
             {/* Stat 1: < 10 days */}
             <div className="flex flex-col items-center justify-center p-3 sm:p-0">
-              <h3 className="text-2xl sm:text-[30px] font-bold text-[#1A44F5] tracking-wide mb-1 leading-tight">
+              <h3 className="text-2xl sm:text-[30px] font-bold text-[#EE343F] tracking-wide mb-1 leading-tight">
                 &lt; 10 days
               </h3>
               <p className="text-sm sm:text-base lg:text-[18px] text-slate-800 m-0 leading-snug">
@@ -686,7 +686,7 @@ export default function LandingPage() {
 
             {/* Stat 2: 93% */}
             <div className="flex flex-col items-center justify-center p-3 sm:p-0">
-              <h3 className="text-2xl sm:text-[30px] font-bold text-[#1A44F5] tracking-wide mb-1 leading-tight">
+              <h3 className="text-2xl sm:text-[30px] font-bold text-[#EE343F] tracking-wide mb-1 leading-tight">
                 93%
               </h3>
               <p className="text-sm sm:text-base lg:text-[18px] text-slate-800 m-0 leading-snug">
@@ -696,7 +696,7 @@ export default function LandingPage() {
 
             {/* Stat 3: $0 */}
             <div className="flex flex-col items-center justify-center p-3 sm:p-0">
-              <h3 className="text-2xl sm:text-[30px] font-bold text-[#1A44F5] tracking-wide mb-1 leading-tight">
+              <h3 className="text-2xl sm:text-[30px] font-bold text-[#EE343F] tracking-wide mb-1 leading-tight">
                 $0
               </h3>
               <p className="text-sm sm:text-base lg:text-[18px] text-slate-800 m-0 leading-snug">

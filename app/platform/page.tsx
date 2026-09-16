@@ -92,7 +92,7 @@ export default function PlatformPage() {
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#E5EEFF',
+              backgroundColor: '#FEE6E8',
               border: '1px solid rgba(51, 102, 255, 0.2)',
               borderRadius: '10px',
               padding: '6px 16px',
@@ -101,7 +101,7 @@ export default function PlatformPage() {
           >
             <span
               style={{
-                color: '#1A44F5',
+                color: '#EE343F',
                 fontSize: '18px',
                 fontWeight: 500,
                 lineHeight: '24px',
@@ -124,7 +124,7 @@ export default function PlatformPage() {
             }}
           >
             <span>AI-Native &amp; Agentic · Cloud-Native · </span>
-            <span style={{ color: '#1A44F5' }}>Open-Source</span>
+            <span style={{ color: '#EE343F' }}>Open-Source</span>
           </h1>
 
           {/* Subheading Paragraph */}

@@ -118,7 +118,7 @@ export default function SecurityTeamPage() {
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#E5EEFF',
+              backgroundColor: '#FEE6E8',
               borderRadius: '9999px',
               padding: '6px 20px',
               marginBottom: '20px',
@@ -129,7 +129,7 @@ export default function SecurityTeamPage() {
                 fontSize: '13px',
                 fontWeight: 700,
                 letterSpacing: '0.8px',
-                color: '#1A44F5',
+                color: '#EE343F',
                 textTransform: 'uppercase',
               }}
             >
@@ -148,7 +148,7 @@ export default function SecurityTeamPage() {
               letterSpacing: '-0.5px',
             }}
           >
-            AI + Human Analysts, <span style={{ color: '#1A44F5' }}>Your Way</span>
+            AI + Human Analysts, <span style={{ color: '#EE343F' }}>Your Way</span>
           </h1>
 
           {/* Subtitle */}
@@ -235,7 +235,7 @@ export default function SecurityTeamPage() {
                   height: '2px',
                   width: '100%',
                   background:
-                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #1A44F5 50%, rgba(26, 68, 245, 0) 100%)',
+                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #EE343F 50%, rgba(26, 68, 245, 0) 100%)',
                   margin: '36px 0',
                 }}
               />
@@ -282,7 +282,7 @@ export default function SecurityTeamPage() {
                   height: '2px',
                   width: '100%',
                   background:
-                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #1A44F5 50%, rgba(26, 68, 245, 0) 100%)',
+                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #EE343F 50%, rgba(26, 68, 245, 0) 100%)',
                   margin: '36px 0',
                 }}
               />

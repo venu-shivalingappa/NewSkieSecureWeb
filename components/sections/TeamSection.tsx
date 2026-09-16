@@ -66,16 +66,16 @@ export default function TeamSection({ id }: { id?: string }) {
         >
           {/* Badge / Pill */}
           <div
-            className="inline-flex items-center justify-center bg-[#E5EEFF] rounded-full px-5 py-1.5 mb-4 sm:mb-5"
+            className="inline-flex items-center justify-center bg-[#FEE6E8] rounded-full px-5 py-1.5 mb-4 sm:mb-5"
           >
-            <span className="text-[13px] font-bold tracking-wider text-[#1A44F5] uppercase">
+            <span className="text-[13px] font-bold tracking-wider text-[#EE343F] uppercase">
               YOUR SECURITY TEAM
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="text-2xl sm:text-3xl lg:text-[44px] font-extrabold text-white mb-3 sm:mb-4 leading-tight tracking-tight">
-            AI + Human Analysts, <span className="text-[#1A44F5]">Your Way</span>
+            AI + Human Analysts, <span className="text-[#EE343F]">Your Way</span>
           </h1>
 
           {/* Subtitle */}
@@ -136,7 +136,7 @@ export default function TeamSection({ id }: { id?: string }) {
                   height: '2px',
                   width: '100%',
                   background:
-                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #1A44F5 50%, rgba(26, 68, 245, 0) 100%)',
+                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #EE343F 50%, rgba(26, 68, 245, 0) 100%)',
                   margin: '36px 0',
                 }}
               />
@@ -183,7 +183,7 @@ export default function TeamSection({ id }: { id?: string }) {
                   height: '2px',
                   width: '100%',
                   background:
-                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #1A44F5 50%, rgba(26, 68, 245, 0) 100%)',
+                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #EE343F 50%, rgba(26, 68, 245, 0) 100%)',
                   margin: '36px 0',
                 }}
               />

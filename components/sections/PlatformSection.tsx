@@ -65,9 +65,9 @@ export default function PlatformSection({ id }: { id?: string }) {
         >
           {/* Badge / Pill: "The Platform" */}
           <div
-            className="inline-flex items-center justify-center bg-[#E5EEFF] border border-[#1A44F5]/20 rounded-[10px] px-4 py-1.5 mb-5 sm:mb-6"
+            className="inline-flex items-center justify-center bg-[#FEE6E8] border border-[#EE343F]/20 rounded-[10px] px-4 py-1.5 mb-5 sm:mb-6"
           >
-            <span className="text-[#1A44F5] text-base sm:text-lg font-medium leading-6 tracking-tight">
+            <span className="text-[#EE343F] text-base sm:text-lg font-medium leading-6 tracking-tight">
               The Platform
             </span>
           </div>
@@ -75,7 +75,7 @@ export default function PlatformSection({ id }: { id?: string }) {
           {/* Headline: AI-Native & Agentic · Cloud-Native · Open-Source */}
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#1E293B] tracking-tight m-0">
             <span>AI-Native &amp; Agentic · Cloud-Native · </span>
-            <span className="text-[#1A44F5]">Open-Source</span>
+            <span className="text-[#EE343F]">Open-Source</span>
           </h1>
 
           {/* Subheading Paragraph */}

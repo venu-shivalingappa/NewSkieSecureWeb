@@ -171,14 +171,14 @@ export default function ContactModal({
                 width: '64px',
                 height: '64px',
                 borderRadius: '50%',
-                backgroundColor: '#E5EEFF',
+                backgroundColor: '#FEE6E8',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 marginBottom: '20px',
               }}
             >
-              <CheckCircle size={36} color="#1A44F5" strokeWidth={2.4} />
+              <CheckCircle size={36} color="#EE343F" strokeWidth={2.4} />
             </div>
             <h3
               style={{
@@ -215,11 +215,11 @@ export default function ContactModal({
                   width: '32px',
                   height: '32px',
                   borderRadius: '8px',
-                  backgroundColor: '#1A44F5',
+                  backgroundColor: '#EE343F',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 2px 8px rgba(26, 68, 245, 0.3)',
+                  boxShadow: '0 2px 8px rgba(238, 52, 63, 0.3)',
                 }}
               >
                 <Shield size={16} color="#FFFFFF" strokeWidth={2.4} />
@@ -229,7 +229,7 @@ export default function ContactModal({
                   fontSize: '12px',
                   fontWeight: 700,
                   letterSpacing: '0.08em',
-                  color: '#1A44F5',
+                  color: '#EE343F',
                   textTransform: 'uppercase',
                 }}
               >
@@ -294,7 +294,7 @@ export default function ContactModal({
                     boxSizing: 'border-box',
                     transition: 'border-color 0.15s ease',
                   }}
-                  onFocus={(e) => (e.currentTarget.style.borderColor = '#1A44F5')}
+                  onFocus={(e) => (e.currentTarget.style.borderColor = '#EE343F')}
                   onBlur={(e) => (e.currentTarget.style.borderColor = '#E2E8F0')}
                 />
               </div>
@@ -330,7 +330,7 @@ export default function ContactModal({
                     boxSizing: 'border-box',
                     transition: 'border-color 0.15s ease',
                   }}
-                  onFocus={(e) => (e.currentTarget.style.borderColor = '#1A44F5')}
+                  onFocus={(e) => (e.currentTarget.style.borderColor = '#EE343F')}
                   onBlur={(e) => (e.currentTarget.style.borderColor = '#E2E8F0')}
                 />
               </div>
@@ -366,7 +366,7 @@ export default function ContactModal({
                       boxSizing: 'border-box',
                       transition: 'border-color 0.15s ease',
                     }}
-                    onFocus={(e) => (e.currentTarget.style.borderColor = '#1A44F5')}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = '#EE343F')}
                     onBlur={(e) => (e.currentTarget.style.borderColor = '#E2E8F0')}
                   />
                 </div>
@@ -399,7 +399,7 @@ export default function ContactModal({
                       boxSizing: 'border-box',
                       cursor: 'pointer',
                     }}
-                    onFocus={(e) => (e.currentTarget.style.borderColor = '#1A44F5')}
+                    onFocus={(e) => (e.currentTarget.style.borderColor = '#EE343F')}
                     onBlur={(e) => (e.currentTarget.style.borderColor = '#E2E8F0')}
                   >
                     <option value="50 - 250 endpoints">50 - 250 endpoints</option>
@@ -439,7 +439,7 @@ export default function ContactModal({
                     boxSizing: 'border-box',
                     cursor: 'pointer',
                   }}
-                  onFocus={(e) => (e.currentTarget.style.borderColor = '#1A44F5')}
+                  onFocus={(e) => (e.currentTarget.style.borderColor = '#EE343F')}
                   onBlur={(e) => (e.currentTarget.style.borderColor = '#E2E8F0')}
                 >
                   <option value="Starter ($10/mo)">Starter Plan ($10/mo - 50-250 endpoints)</option>
@@ -457,7 +457,7 @@ export default function ContactModal({
                   width: '100%',
                   height: '48px',
                   borderRadius: '9999px',
-                  backgroundColor: '#1A44F5',
+                  backgroundColor: '#EE343F',
                   border: 'none',
                   color: '#FFFFFF',
                   fontSize: '15px',
@@ -467,21 +467,21 @@ export default function ContactModal({
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '8px',
-                  boxShadow: '0 4px 14px rgba(26, 68, 245, 0.35)',
+                  boxShadow: '0 4px 14px rgba(238, 52, 63, 0.35)',
                   transition: 'all 0.2s ease',
                   marginTop: '10px',
                   boxSizing: 'border-box',
                 }}
                 onMouseEnter={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.backgroundColor = '#1538cc';
+                    e.currentTarget.style.backgroundColor = '#D52A35';
                     e.currentTarget.style.boxShadow = '0 6px 20px rgba(26, 68, 245, 0.45)';
                   }
                 }}
                 onMouseLeave={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.backgroundColor = '#1A44F5';
-                    e.currentTarget.style.boxShadow = '0 4px 14px rgba(26, 68, 245, 0.35)';
+                    e.currentTarget.style.backgroundColor = '#EE343F';
+                    e.currentTarget.style.boxShadow = '0 4px 14px rgba(238, 52, 63, 0.35)';
                   }
                 }}
               >

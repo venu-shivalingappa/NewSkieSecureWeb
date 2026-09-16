@@ -41,7 +41,7 @@ export default function WhySkieSecureSection({ id }: { id?: string }) {
       id={id}
       style={{
         width: '100%',
-        backgroundColor: '#1A44F5',
+        backgroundColor: '#EE343F',
         fontFamily: "'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
         display: 'flex',
         alignItems: 'center',
@@ -66,9 +66,9 @@ export default function WhySkieSecureSection({ id }: { id?: string }) {
           >
             {/* Pill Badge: WHY SKIESECURE */}
             <div
-              className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#E5EEFF] border border-[#DBEAFE] mb-5"
+              className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#FEE6E8] border border-[#F7C7CE] mb-5"
             >
-              <span className="text-xs font-bold tracking-wider text-[#1A44F5] uppercase leading-none">
+              <span className="text-xs font-bold tracking-wider text-[#EE343F] uppercase leading-none">
                 WHY SKIESECURE
               </span>
             </div>
@@ -93,13 +93,13 @@ export default function WhySkieSecureSection({ id }: { id?: string }) {
                 >
                   {/* Round checkmark icon with circle */}
                   <div
-                    className="w-5 h-5 rounded-full border-[1.5px] border-[#DBEAFE] flex items-center justify-center shrink-0"
+                    className="w-5 h-5 rounded-full border-[1.5px] border-[#F7C7CE] flex items-center justify-center shrink-0"
                   >
                     <Check size={12} color="#FFFFFF" strokeWidth={2.8} />
                   </div>
 
                   {/* Bullet Text */}
-                  <span className="text-sm sm:text-[14.5px] font-normal leading-snug text-[#DBEAFE] tracking-tight">
+                  <span className="text-sm sm:text-[14.5px] font-normal leading-snug text-[#F7C7CE] tracking-tight">
                     {bullet}
                   </span>
                 </div>
@@ -123,7 +123,7 @@ export default function WhySkieSecureSection({ id }: { id?: string }) {
             {METRIC_CARDS.map((card, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl py-8 sm:py-10 px-6 flex flex-col items-center justify-center text-center shadow-[0_10px_28px_rgba(10,37,140,0.18),0_2px_6px_rgba(0,0,0,0.04)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(10,37,140,0.24)] cursor-default min-h-[140px] sm:min-h-[175px] box-border"
+                className="bg-white rounded-2xl py-8 sm:py-10 px-6 flex flex-col items-center justify-center text-center shadow-[0_10px_28px_rgba(111,18,32,0.18),0_2px_6px_rgba(0,0,0,0.04)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(111,18,32,0.24)] cursor-default min-h-[140px] sm:min-h-[175px] box-border"
               >
                 {/* Metric Big Value */}
                 <div className="text-3xl sm:text-4xl xl:text-[44px] font-bold leading-tight tracking-tight text-[#1E293B] mb-2 sm:mb-2.5">
