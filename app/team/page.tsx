@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import TeamFeature from '@/components/ui/TeamFeature';
 
 export default function SecurityTeamPage() {
   return (
@@ -194,135 +195,31 @@ export default function SecurityTeamPage() {
               boxSizing: 'border-box',
             }}
           >
-            {/* 1. Dedicated SOC Team */}
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-                <img
-                  src="/images/team/icon-dedicated-team.png"
-                  alt="Dedicated SOC Team"
-                  style={{ width: '46px', height: '46px', objectFit: 'contain', flexShrink: 0 }}
-                />
-                <div>
-                  <h3
-                    style={{
-                      fontSize: '20px',
-                      fontWeight: 700,
-                      color: '#FFFFFF',
-                      margin: '0 0 8px 0',
-                      lineHeight: 1.25,
-                    }}
-                  >
-                    Dedicated SOC Team
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: '14px',
-                      color: '#FFFFFF',
-                      lineHeight: 1.55,
-                      margin: 0,
-                      opacity: 0.95,
-                    }}
-                  >
-                    A named team of analysts assigned exclusively to your environment. They know your infrastructure,
-                    your risk profile, and your escalation preferences.
-                  </p>
-                </div>
-              </div>
+            <TeamFeature
+              iconSrc="/images/team/icon-dedicated-team.png"
+              iconAlt="Dedicated SOC Team"
+              title="Dedicated SOC Team"
+              description={<>A named team of analysts assigned exclusively to your environment. They know your infrastructure,
+                your risk profile, and your escalation preferences.</>}
+              showDivider
+            />
 
-              {/* Divider 1 */}
-              <div
-                style={{
-                  height: '2px',
-                  width: '100%',
-                  background:
-                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #EE343F 50%, rgba(26, 68, 245, 0) 100%)',
-                  margin: '36px 0',
-                }}
-              />
-            </div>
+            <TeamFeature
+              iconSrc="/images/team/icon-soc-coverage.png"
+              iconAlt="SOC Coverage"
+              title="SOC Coverage"
+              description={<>Cost-efficient 24/7 coverage from our pooled analyst team. Ideal for smaller environments that need
+                round-the-clock eyes without dedicated headcount.</>}
+              showDivider
+            />
 
-            {/* 2. SOC Coverage */}
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-                <img
-                  src="/images/team/icon-soc-coverage.png"
-                  alt="SOC Coverage"
-                  style={{ width: '46px', height: '46px', objectFit: 'contain', flexShrink: 0 }}
-                />
-                <div>
-                  <h3
-                    style={{
-                      fontSize: '20px',
-                      fontWeight: 700,
-                      color: '#FFFFFF',
-                      margin: '0 0 8px 0',
-                      lineHeight: 1.25,
-                    }}
-                  >
-                    SOC Coverage
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: '14px',
-                      color: '#FFFFFF',
-                      lineHeight: 1.55,
-                      margin: 0,
-                      opacity: 0.95,
-                    }}
-                  >
-                    Cost-efficient 24/7 coverage from our pooled analyst team. Ideal for smaller environments that need
-                    round-the-clock eyes without dedicated headcount.
-                  </p>
-                </div>
-              </div>
-
-              {/* Divider 2 */}
-              <div
-                style={{
-                  height: '2px',
-                  width: '100%',
-                  background:
-                    'linear-gradient(90deg, rgba(26, 68, 245, 0) 0%, #EE343F 50%, rgba(26, 68, 245, 0) 100%)',
-                  margin: '36px 0',
-                }}
-              />
-            </div>
-
-            {/* 3. Remote Workforce */}
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
-                <img
-                  src="/images/team/icon-remote-workforce.png"
-                  alt="Remote Workforce"
-                  style={{ width: '46px', height: '46px', objectFit: 'contain', flexShrink: 0 }}
-                />
-                <div>
-                  <h3
-                    style={{
-                      fontSize: '20px',
-                      fontWeight: 700,
-                      color: '#FFFFFF',
-                      margin: '0 0 8px 0',
-                      lineHeight: 1.25,
-                    }}
-                  >
-                    Remote Workforce
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: '14px',
-                      color: '#FFFFFF',
-                      lineHeight: 1.55,
-                      margin: 0,
-                      opacity: 0.95,
-                    }}
-                  >
-                    Embed our analysts into your team as a remote extension. They operate on your tools, join your
-                    stand-ups, and work your hours like a hire, without the overhead.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <TeamFeature
+              iconSrc="/images/team/icon-remote-workforce.png"
+              iconAlt="Remote Workforce"
+              title="Remote Workforce"
+              description={<>Embed our analysts into your team as a remote extension. They operate on your tools, join your
+                stand-ups, and work your hours like a hire, without the overhead.</>}
+            />
 
             {/* Footer Note */}
             <p
