@@ -25,17 +25,16 @@ export default function SecurityTeamPage() {
     >
       {/* 1920x1201 Full-Width Section Frame */}
       <section
+        className="w-full max-w-[1920px] min-h-0 lg:min-h-[1201px] px-5 py-12 sm:px-8 sm:py-16 lg:px-20 lg:pt-20 lg:pb-[100px]"
         style={{
           width: '100%',
           maxWidth: '1920px',
-          minHeight: '1201px',
           backgroundColor: '#1E293B',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'flex-start',
           position: 'relative',
-          padding: '80px 80px 100px 80px',
           boxSizing: 'border-box',
         }}
       >
@@ -173,27 +172,11 @@ export default function SecurityTeamPage() {
         {/* TWO-COLUMN SECTION (FEATURE BLOCKS + DASHBOARD MOCKUP)                    */}
         {/* ========================================================================= */}
         <div
-          style={{
-            width: '100%',
-            maxWidth: '1720px',
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '48px',
-            position: 'relative',
-            zIndex: 2,
-          }}
+          className="w-full max-w-[1720px] min-w-0 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 relative z-[2]"
         >
           {/* LEFT COLUMN (approx 490px wide) */}
           <div
-            style={{
-              flex: '0 0 490px',
-              maxWidth: '520px',
-              display: 'flex',
-              flexDirection: 'column',
-              boxSizing: 'border-box',
-            }}
+            className="w-full min-w-0 flex flex-col lg:flex-[0_0_490px] lg:max-w-[520px]"
           >
             <TeamFeature
               iconSrc="/images/team/icon-dedicated-team.png"
@@ -239,17 +222,7 @@ export default function SecurityTeamPage() {
 
           {/* RIGHT COLUMN (approx 1060px wide dashboard) */}
           <div
-            style={{
-              flex: '1 1 980px',
-              maxWidth: '1120px',
-              borderRadius: '24px',
-              overflow: 'hidden',
-              boxShadow: '0 24px 64px rgba(0, 0, 0, 0.45), 0 4px 16px rgba(0, 0, 0, 0.25)',
-              backgroundColor: '#FFFFFF',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
-              display: 'flex',
-              flexDirection: 'column',
-            }}
+            className="w-full min-w-0 lg:flex-[1_1_980px] lg:max-w-[1120px] rounded-2xl sm:rounded-[24px] overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.45),0_4px_16px_rgba(0,0,0,0.25)] bg-white border border-white/10 flex flex-col"
           >
             <img
               src="/images/team/dashboard-detections.png"
