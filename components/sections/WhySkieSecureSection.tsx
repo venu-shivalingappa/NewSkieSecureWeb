@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Check } from 'lucide-react';
+import { Badge } from '@/components/ui/Badge';
 
 interface MetricCardProps {
   value: string;
@@ -65,13 +66,11 @@ export default function WhySkieSecureSection({ id }: { id?: string }) {
             className="w-full xl:flex-[1_1_54%] xl:max-w-[680px] flex flex-col items-start"
           >
             {/* Pill Badge: WHY SKIESECURE */}
-            <div
-              className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#FEE6E8] border border-[#F7C7CE] mb-5"
-            >
-              <span className="text-xs font-bold tracking-wider text-[#EE343F] uppercase leading-none">
+            <Badge className="rounded-full border border-[var(--color-primary-border)] px-3.5 py-1.5 mb-5">
+              <span className="text-xs font-bold tracking-wider text-[var(--color-primary)] uppercase leading-none">
                 WHY SKIESECURE
               </span>
-            </div>
+            </Badge>
 
             {/* Headline: Security Operations / Without the Overhead */}
             <h2 className="text-3xl sm:text-4xl xl:text-[44px] font-extrabold leading-tight sm:leading-[1.15] tracking-tight text-white mb-5">

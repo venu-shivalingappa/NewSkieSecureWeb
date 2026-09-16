@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Badge } from '@/components/ui/Badge';
 import {
   Database,
   FileText,
@@ -105,13 +106,11 @@ export default function CapabilitiesSection({ id }: { id?: string }) {
           className="flex flex-col items-center text-center mb-8 sm:mb-12"
         >
           {/* Badge / Pill */}
-          <div
-            className="inline-flex items-center justify-center bg-[#FEE6E8] rounded-full px-5 py-1.5 mb-4"
-          >
-            <span className="text-[13px] font-bold tracking-wider text-[#EE343F] uppercase">
+          <Badge className="rounded-full px-5 py-1.5 mb-4">
+            <span className="text-[13px] font-bold tracking-wider text-[var(--color-primary)] uppercase">
               CAPABILITIES
             </span>
-          </div>
+          </Badge>
 
           {/* Main Headline */}
           <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-extrabold text-[#1E293B] mb-3 leading-tight tracking-tight">

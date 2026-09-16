@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
+import { Badge } from '@/components/ui/Badge';
 
 interface PricingFeature {
   text: string;
@@ -52,13 +53,11 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
         {/* ========================================================================= */}
         <div className="mb-8 sm:mb-12 flex flex-col items-start">
           {/* Pill Badge: PRICING */}
-          <div
-            className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#FEE6E8] border border-[#F7C7CE] mb-4"
-          >
-            <span className="text-xs font-bold tracking-wider text-[#EE343F] uppercase leading-none">
+          <Badge className="rounded-full border border-[var(--color-primary-border)] px-3.5 py-1.5 mb-4">
+            <span className="text-xs font-bold tracking-wider text-[var(--color-primary)] uppercase leading-none">
               PRICING
             </span>
-          </div>
+          </Badge>
 
           {/* Heading: One Plan. Everything Included. Starting at $10/endpoint. */}
           <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-tight lg:leading-[1.15] tracking-tight m-0">

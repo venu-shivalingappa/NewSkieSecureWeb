@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Plus } from 'lucide-react';
+import { Badge } from '@/components/ui/Badge';
 
 interface FAQItem {
   question: string;
@@ -74,15 +75,11 @@ export default function FAQSection({ id }: { id?: string }) {
         {/* ========================================================================= */}
         {/* BADGE: FAQ'S                                                              */}
         {/* ========================================================================= */}
-        <div
-          className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#FEE6E8] border border-[#F7C7CE] mb-4"
-        >
-          <span
-            className="text-xs font-bold tracking-wider text-[#EE343F] uppercase leading-none"
-          >
+        <Badge className="rounded-full border border-[var(--color-primary-border)] px-3.5 py-1.5 mb-4">
+          <span className="text-xs font-bold tracking-wider text-[var(--color-primary)] uppercase leading-none">
             FAQ&apos;S
           </span>
-        </div>
+        </Badge>
 
         {/* Headline */}
         <h2

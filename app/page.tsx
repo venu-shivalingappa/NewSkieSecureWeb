@@ -12,6 +12,7 @@ import PricingSection from '@/components/sections/PricingSection';
 import FAQSection from '@/components/sections/FAQSection';
 import FooterSection from '@/components/sections/FooterSection';
 import ContactModal from '@/components/ui/ContactModal';
+import { Button } from '@/components/ui/Button';
 
 export default function LandingPage() {
   // Contact / Waitlist Modal state
@@ -130,24 +131,24 @@ export default function LandingPage() {
               </a>
             </nav>
 
-            <button
+            <Button
               type="button"
               onClick={() => openContactModal('Get Early Access — Priority Access', 'Growth ($8/mo)')}
-              className="py-2.5 px-5.5 rounded-full bg-[#EE343F] hover:bg-[#D52A35] text-white text-sm font-semibold shadow-[0_2px_10px_rgba(238,52,63,0.3)] hover:shadow-[0_4px_14px_rgba(238,52,63,0.4)] whitespace-nowrap transition-all"
+              className="py-2.5 px-5.5 rounded-full text-sm font-semibold shadow-[0_2px_10px_rgba(238,52,63,0.3)] hover:shadow-[0_4px_14px_rgba(238,52,63,0.4)] whitespace-nowrap transition-all"
             >
               Get Early Access
-            </button>
+            </Button>
           </div>
 
           {/* Mobile Hamburger Button */}
           <div className="flex lg:hidden items-center gap-2 sm:gap-3">
-            <button
+            <Button
               type="button"
               onClick={() => openContactModal('Get Early Access — Priority Access', 'Growth ($8/mo)')}
-              className="py-2 px-3.5 sm:px-4 rounded-full bg-[#EE343F] hover:bg-[#D52A35] text-white text-xs sm:text-sm font-semibold whitespace-nowrap shadow-sm transition-colors"
+              className="py-2 px-3.5 sm:px-4 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap shadow-sm transition-colors"
             >
               Get Early Access
-            </button>
+            </Button>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -260,26 +261,27 @@ export default function LandingPage() {
           {/* CTA Buttons Container */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-3.5 mt-6 w-full sm:w-auto px-4 sm:px-0">
             {/* Join the Waitlist */}
-            <button
+            <Button
               type="button"
               onClick={() => openContactModal('Join the Waitlist & Get Early Access', 'Growth ($8/mo)')}
-              className="w-full sm:w-[257px] h-12 bg-[#EE343F] hover:bg-[#D52A35] text-white rounded-full font-semibold text-base flex items-center justify-center gap-2 cursor-pointer shadow-[0px_0px_40px_rgba(238,52,63,0.18),0px_0px_80px_rgba(238,52,63,0.06)] transition-all"
+              className="w-full sm:w-[257px] h-12 rounded-full font-semibold text-base flex items-center justify-center gap-2 cursor-pointer shadow-[0px_0px_40px_rgba(238,52,63,0.18),0px_0px_80px_rgba(238,52,63,0.06)] transition-all"
             >
               <span>Join the Waitlist</span>
               <ArrowRight style={{ width: '18px', height: '18px' }} strokeWidth={2.2} />
-            </button>
+            </Button>
 
             {/* How It Works */}
-            <button
+            <Button
               type="button"
+              variant="secondary"
               onClick={() => {
                 const target = document.getElementById('platform');
                 if (target) target.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="w-full sm:w-[259px] h-12 bg-white border border-slate-800 text-slate-800 rounded-full font-medium text-base flex items-center justify-center cursor-pointer hover:bg-slate-50 transition-all"
+              className="w-full sm:w-[259px] h-12 rounded-full font-medium text-base flex items-center justify-center cursor-pointer transition-all"
             >
               How It Works
-            </button>
+            </Button>
           </div>
         </div>
 

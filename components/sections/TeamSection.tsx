@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { Badge } from '@/components/ui/Badge';
 
 export default function TeamSection({ id }: { id?: string }) {
   return (
@@ -65,13 +66,11 @@ export default function TeamSection({ id }: { id?: string }) {
           className="flex flex-col items-center text-center mb-10 sm:mb-14 relative z-[2]"
         >
           {/* Badge / Pill */}
-          <div
-            className="inline-flex items-center justify-center bg-[#FEE6E8] rounded-full px-5 py-1.5 mb-4 sm:mb-5"
-          >
-            <span className="text-[13px] font-bold tracking-wider text-[#EE343F] uppercase">
+          <Badge className="rounded-full px-5 py-1.5 mb-4 sm:mb-5">
+            <span className="text-[13px] font-bold tracking-wider text-[var(--color-primary)] uppercase">
               YOUR SECURITY TEAM
             </span>
-          </div>
+          </Badge>
 
           {/* Headline */}
           <h1 className="text-2xl sm:text-3xl lg:text-[44px] font-extrabold text-white mb-3 sm:mb-4 leading-tight tracking-tight">

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { Button } from '@/components/ui/Button';
 
 interface FooterSectionProps {
   id?: string;
@@ -78,12 +79,12 @@ export default function FooterSection({ id, onOpenModal }: FooterSectionProps) {
             />
 
             {/* Button Pill: Get Early Access */}
-            <button
+            <Button
               type="submit"
-              className="w-full sm:w-auto h-12 px-7 rounded-full bg-[#EE343F] hover:bg-[#D52A35] text-white text-sm sm:text-[15px] font-semibold transition-colors shrink-0 shadow-md cursor-pointer"
+              className="w-full sm:w-auto h-12 px-7 rounded-full text-sm sm:text-[15px] font-semibold transition-colors shrink-0 shadow-md cursor-pointer"
             >
               Get Early Access
-            </button>
+            </Button>
           </form>
 
           {/* Disclaimer: No spam. Just launch updates. */}
