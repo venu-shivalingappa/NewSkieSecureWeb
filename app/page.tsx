@@ -144,7 +144,10 @@ export default function LandingPage() {
           <div className="flex lg:hidden items-center gap-2 sm:gap-3">
             <Button
               type="button"
-              onClick={() => openContactModal('Get Early Access — Priority Access', 'Growth ($8/mo)')}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openContactModal('Get Early Access — Priority Access', 'Growth ($8/mo)');
+              }}
               className="py-2 px-3.5 sm:px-4 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap shadow-sm transition-colors"
             >
               Get Early Access
