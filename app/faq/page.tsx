@@ -5,7 +5,7 @@ import FAQSection from '@/components/sections/FAQSection';
 
 export default function FAQPage() {
   return (
-    <main style={{ minHeight: '100vh', width: '100%', backgroundColor: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <main className="min-h-screen w-full bg-[var(--color-surface)] flex items-center justify-center">
       <FAQSection />
     </main>
   );
