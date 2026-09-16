@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Badge } from '@/components/ui/Badge';
+import { SectionHeading } from '@/components/ui/SectionHeading';
 
 export default function TeamSection({ id }: { id?: string }) {
   return (
@@ -62,27 +63,21 @@ export default function TeamSection({ id }: { id?: string }) {
         {/* ========================================================================= */}
         {/* HEADER AREA (CENTERED)                                                    */}
         {/* ========================================================================= */}
-        <div
+        <SectionHeading
           className="flex flex-col items-center text-center mb-10 sm:mb-14 relative z-[2]"
-        >
-          {/* Badge / Pill */}
-          <Badge className="rounded-full px-5 py-1.5 mb-4 sm:mb-5">
-            <span className="text-[13px] font-bold tracking-wider text-[var(--color-primary)] uppercase">
-              YOUR SECURITY TEAM
-            </span>
-          </Badge>
-
-          {/* Headline */}
-          <h1 className="text-2xl sm:text-3xl lg:text-[44px] font-extrabold text-white mb-3 sm:mb-4 leading-tight tracking-tight">
-            AI + Human Analysts, <span className="text-[#EE343F]">Your Way</span>
-          </h1>
-
-          {/* Subtitle */}
-          <p className="text-sm sm:text-base text-white leading-relaxed max-w-[860px] m-0 font-normal opacity-95 px-2">
-            We blend AI-powered automation with real SOC analysts — available as a dedicated team, shared coverage,
-            or a remote extension of your own staff.
-          </p>
-        </div>
+          badge={(
+            <Badge className="rounded-full px-5 py-1.5 mb-4 sm:mb-5">
+              <span className="text-[13px] font-bold tracking-wider text-[var(--color-primary)] uppercase">
+                YOUR SECURITY TEAM
+              </span>
+            </Badge>
+          )}
+          headingLevel="h1"
+          title={<>AI + Human Analysts, <span className="text-[#EE343F]">Your Way</span></>}
+          titleClassName="text-2xl sm:text-3xl lg:text-[44px] font-extrabold text-white mb-3 sm:mb-4 leading-tight tracking-tight"
+          description="We blend AI-powered automation with real SOC analysts — available as a dedicated team, shared coverage, or a remote extension of your own staff."
+          descriptionClassName="text-sm sm:text-base text-white leading-relaxed max-w-[860px] m-0 font-normal opacity-95 px-2"
+        />
 
         {/* ========================================================================= */}
         {/* TWO-COLUMN SECTION (FEATURE BLOCKS + DASHBOARD MOCKUP)                    */}

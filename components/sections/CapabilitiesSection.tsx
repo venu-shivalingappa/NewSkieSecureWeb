@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Badge } from '@/components/ui/Badge';
+import { SectionHeading } from '@/components/ui/SectionHeading';
 import {
   Database,
   FileText,
@@ -102,26 +103,21 @@ export default function CapabilitiesSection({ id }: { id?: string }) {
         {/* ========================================================================= */}
         {/* HEADER AREA (CENTERED)                                                    */}
         {/* ========================================================================= */}
-        <div
+        <SectionHeading
           className="flex flex-col items-center text-center mb-8 sm:mb-12"
-        >
-          {/* Badge / Pill */}
-          <Badge className="rounded-full px-5 py-1.5 mb-4">
-            <span className="text-[13px] font-bold tracking-wider text-[var(--color-primary)] uppercase">
-              CAPABILITIES
-            </span>
-          </Badge>
-
-          {/* Main Headline */}
-          <h1 className="text-2xl sm:text-3xl lg:text-[40px] font-extrabold text-[#1E293B] mb-3 leading-tight tracking-tight">
-            Everything You Need to <span className="text-[#EE343F]">Stay Secure</span>
-          </h1>
-
-          {/* Subtitle Paragraph */}
-          <p className="text-sm sm:text-base text-slate-500 leading-normal m-0 font-normal max-w-xl">
-            SIEM, FIM, SOAR, and expert analysts — all included, all managed.
-          </p>
-        </div>
+          badge={(
+            <Badge className="rounded-full px-5 py-1.5 mb-4">
+              <span className="text-[13px] font-bold tracking-wider text-[var(--color-primary)] uppercase">
+                CAPABILITIES
+              </span>
+            </Badge>
+          )}
+          headingLevel="h1"
+          title={<>Everything You Need to <span className="text-[#EE343F]">Stay Secure</span></>}
+          titleClassName="text-2xl sm:text-3xl lg:text-[40px] font-extrabold text-[#1E293B] mb-3 leading-tight tracking-tight"
+          description="SIEM, FIM, SOAR, and expert analysts — all included, all managed."
+          descriptionClassName="text-sm sm:text-base text-slate-500 leading-normal m-0 font-normal max-w-xl"
+        />
 
         {/* ========================================================================= */}
         {/* 8 CARDS GRID (1 col mobile, 2 cols tablet/desktop)                       */}

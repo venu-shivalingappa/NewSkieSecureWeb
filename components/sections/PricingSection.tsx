@@ -3,6 +3,7 @@
 import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import { Badge } from '@/components/ui/Badge';
+import { SectionHeading } from '@/components/ui/SectionHeading';
 
 interface PricingFeature {
   text: string;
@@ -51,20 +52,24 @@ export default function PricingSection({ id, onOpenModal }: PricingSectionProps)
         {/* ========================================================================= */}
         {/* SECTION HEADER: Pill Badge & Dual-Line Bold Heading                       */}
         {/* ========================================================================= */}
-        <div className="mb-8 sm:mb-12 flex flex-col items-start">
-          {/* Pill Badge: PRICING */}
-          <Badge className="rounded-full border border-[var(--color-primary-border)] px-3.5 py-1.5 mb-4">
-            <span className="text-xs font-bold tracking-wider text-[var(--color-primary)] uppercase leading-none">
-              PRICING
-            </span>
-          </Badge>
-
-          {/* Heading: One Plan. Everything Included. Starting at $10/endpoint. */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-tight lg:leading-[1.15] tracking-tight m-0">
-            <span className="text-slate-900 block">One Plan. Everything Included.</span>
-            <span className="text-[#EE343F] block mt-1.5 sm:mt-2">Starting at $10/endpoint.</span>
-          </h2>
-        </div>
+        <SectionHeading
+          className="mb-8 sm:mb-12 flex flex-col items-start"
+          badge={(
+            <Badge className="rounded-full border border-[var(--color-primary-border)] px-3.5 py-1.5 mb-4">
+              <span className="text-xs font-bold tracking-wider text-[var(--color-primary)] uppercase leading-none">
+                PRICING
+              </span>
+            </Badge>
+          )}
+          headingLevel="h2"
+          title={(
+            <>
+              <span className="text-slate-900 block">One Plan. Everything Included.</span>
+              <span className="text-[#EE343F] block mt-1.5 sm:mt-2">Starting at $10/endpoint.</span>
+            </>
+          )}
+          titleClassName="text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-tight lg:leading-[1.15] tracking-tight m-0"
+        />
 
         {/* ========================================================================= */}
         {/* MAIN SPLIT LAYOUT: 3 Cards on Left + Comprehensive Feature List on Right */}
