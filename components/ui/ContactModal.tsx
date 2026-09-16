@@ -120,7 +120,7 @@ export default function ContactModal({
 
       {/* Modal Card */}
       <div
-        className="relative w-full max-w-[540px] max-h-[92vh] overflow-y-auto bg-white rounded-2xl sm:rounded-[24px] p-6 sm:p-10 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.35),0_0_0_1px_rgba(226,232,240,0.8)] box-border z-10"
+        className="relative w-full max-w-[540px] max-h-[92vh] overflow-y-auto bg-white rounded-2xl sm:rounded-[24px] p-4 sm:p-10 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.35),0_0_0_1px_rgba(226,232,240,0.8)] box-border z-10"
         style={{
           fontFamily: "'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
           animation: 'scaleInModal 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards',
@@ -357,7 +357,7 @@ export default function ContactModal({
               </div>
 
               {/* Company Name & Endpoints Row */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '12px' }}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 min-w-0">
                 <div>
                   <label
                     style={{
@@ -377,6 +377,8 @@ export default function ContactModal({
                     onChange={(e) => setCompany(e.target.value)}
                     style={{
                       width: '100%',
+                      maxWidth: '100%',
+                      minWidth: 0,
                       height: '44px',
                       borderRadius: '10px',
                       border: '1.5px solid #E2E8F0',
@@ -409,6 +411,8 @@ export default function ContactModal({
                     onChange={(e) => setEndpoints(e.target.value)}
                     style={{
                       width: '100%',
+                      maxWidth: '100%',
+                      minWidth: 0,
                       height: '44px',
                       borderRadius: '10px',
                       border: '1.5px solid #E2E8F0',
