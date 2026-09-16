@@ -23,6 +23,7 @@ export default function ContactModal({
   const [interest, setInterest] = useState(initialInterest);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   // Sync initial interest when opened
   useEffect(() => {
@@ -57,9 +58,10 @@ export default function ContactModal({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError('');
 
     try {
-      await fetch('/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -70,10 +72,11 @@ export default function ContactModal({
           interest,
         }),
       });
-    } catch (err) {
-      console.error('Submission failed:', err);
-    } finally {
-      setLoading(false);
+
+      if (!response.ok) {
+        throw new Error('Submission failed');
+      }
+
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);
@@ -82,6 +85,10 @@ export default function ContactModal({
         setCompany('');
         onClose();
       }, 2500);
+    } catch {
+      setError("We couldn't send your request. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -260,6 +267,20 @@ export default function ContactModal({
             >
               Lock in founding-member pricing, full SIEM/FIM/SOAR modules, and 24/7 human analyst escalation.
             </p>
+
+            {error && (
+              <p
+                role="alert"
+                style={{
+                  fontSize: '14px',
+                  lineHeight: 1.5,
+                  color: '#B61E2B',
+                  margin: '0 0 16px 0',
+                }}
+              >
+                {error}
+              </p>
+            )}
 
             {/* Input Form */}
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
