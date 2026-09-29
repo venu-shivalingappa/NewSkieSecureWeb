@@ -262,39 +262,33 @@ export default function SecurityPage() {
       `}</style>
 
       <div
+        className="w-full max-w-[1720px] min-h-0 lg:min-h-[913px] flex flex-col lg:flex-row items-center justify-center gap-8 sm:gap-10 lg:gap-8 px-4 sm:px-6 lg:px-5 py-8 sm:py-10"
         style={{
           width: '100%',
           maxWidth: '1720px',
-          minHeight: '913px',
           display: 'flex',
-          flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '40px 20px',
           boxSizing: 'border-box',
           position: 'relative',
         }}
       >
         {/* LEFT COLUMN: STATIC HERO WITH SHIELD */}
         <div
+          className="w-full lg:flex-[1_1_650px] max-w-[714px] flex flex-col items-center justify-center text-center p-0 sm:p-4 lg:p-5 box-border min-w-0"
           style={{
-            flex: '1 1 650px',
-            maxWidth: '714px',
             display: 'flex',
-            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            padding: '20px',
             boxSizing: 'border-box',
           }}
         >
           {/* Concentric Circles & Split-Shield Hero Illustration */}
           <div
+            className="relative w-full max-w-[340px] sm:max-w-[540px] aspect-square flex items-center justify-center"
             style={{
               position: 'relative',
-              width: '540px',
-              height: '540px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -403,6 +397,7 @@ export default function SecurityPage() {
             >
               {/* "SOUND FAMILIAR?" Badge */}
               <div
+                className="mb-3 sm:mb-[22px]"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -410,7 +405,6 @@ export default function SecurityPage() {
                   borderRadius: '10px',
                   backgroundColor: 'rgba(239, 68, 68, 0.08)',
                   border: '1px solid rgba(239, 68, 68, 0.22)',
-                  marginBottom: '22px',
                 }}
               >
                 <span
@@ -428,15 +422,13 @@ export default function SecurityPage() {
 
               {/* Headline Spanning across the Shield Gap */}
               <h2
+                className="w-full max-w-[330px] sm:max-w-full text-[30px] leading-[34px] sm:text-[40px] sm:leading-[46px]"
                 style={{
-                  fontSize: '40px',
                   fontWeight: 800,
-                  lineHeight: '46px',
                   color: '#1E1E1E',
                   letterSpacing: '-0.8px',
                   margin: 0,
                   textAlign: 'center',
-                  whiteSpace: 'nowrap',
                 }}
               >
                 Security Shouldn’t Be
@@ -496,14 +488,12 @@ export default function SecurityPage() {
 
         {/* RIGHT COLUMN: SEQUENCED ANIMATED CAROUSEL WITH DOT GRID BACKGROUND */}
         <div
+          className="w-full lg:flex-[1_1_800px] max-w-[960px] flex flex-col items-center relative p-4 sm:p-6 lg:py-10 lg:px-5 box-border min-w-0 bg-[radial-gradient(#CBD5E1_1.2px,transparent_1.2px)] [background-size:28px_28px]"
           style={{
-            flex: '1 1 800px',
-            maxWidth: '960px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             position: 'relative',
-            padding: '40px 20px',
             boxSizing: 'border-box',
             backgroundImage: 'radial-gradient(#CBD5E1 1.2px, transparent 1.2px)',
             backgroundSize: '28px 28px',
@@ -513,25 +503,22 @@ export default function SecurityPage() {
         >
           {/* Card Stack Container */}
           <div
+            className="w-full max-w-[900px] flex flex-col gap-5 sm:gap-8 box-border min-w-0"
             style={{
               width: '100%',
               maxWidth: '900px',
               display: 'flex',
               flexDirection: 'column',
-              gap: '32px',
               boxSizing: 'border-box',
             }}
           >
             {/* TOP CARD: PROBLEM CARD (RED #FFE3E3) */}
             <div
+              className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-10 p-5 sm:py-8 sm:px-10 lg:py-10 lg:px-12 min-w-0"
               style={{
                 backgroundColor: '#FFE3E3',
                 borderRadius: '30px',
-                padding: '40px 48px',
                 display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: '40px',
                 boxSizing: 'border-box',
                 minHeight: '170px',
                 boxShadow: '0 6px 24px rgba(240, 13, 13, 0.04)',
@@ -576,6 +563,7 @@ export default function SecurityPage() {
                     }}
                   >
                     <h3
+                      className="max-w-full break-words"
                       style={{
                         color: '#B61E2B',
                         fontSize: 'clamp(28px, 2.7vw, 42px)',
@@ -583,7 +571,6 @@ export default function SecurityPage() {
                         lineHeight: 1.25,
                         letterSpacing: '-0.02em',
                         margin: 0,
-                        whiteSpace: 'nowrap',
                       }}
                     >
                       {currentSlide.problem.line1}
@@ -614,6 +601,7 @@ export default function SecurityPage() {
                       }}
                     >
                       <h3
+                        className="max-w-full break-words"
                         style={{
                           color: '#B61E2B',
                           fontSize: 'clamp(28px, 2.7vw, 42px)',
@@ -621,7 +609,6 @@ export default function SecurityPage() {
                           lineHeight: 1.25,
                           letterSpacing: '-0.02em',
                           margin: 0,
-                          whiteSpace: 'nowrap',
                         }}
                       >
                         {currentSlide.problem.line2}
@@ -648,14 +635,11 @@ export default function SecurityPage() {
 
             {/* BOTTOM CARD: SOLUTION CARD (BLUE #FEE6E8) */}
             <div
+              className="w-full flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-10 p-5 sm:py-8 sm:px-10 lg:py-10 lg:px-12 min-w-0"
               style={{
                 backgroundColor: '#FEE6E8',
                 borderRadius: '30px',
-                padding: '40px 48px',
                 display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: '40px',
                 boxSizing: 'border-box',
                 minHeight: '200px',
                 boxShadow: '0 6px 24px rgba(238, 52, 63, 0.06)',
@@ -677,7 +661,7 @@ export default function SecurityPage() {
               {/* Right Text Area: Animated after red strikethrough */}
               <div
                 key={`solution-${activeSlide}`}
-                className="anim-blue-text"
+                className="anim-blue-text min-w-0"
                 style={{
                   flex: 1,
                 }}
